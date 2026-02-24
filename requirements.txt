@@ -1,0 +1,4 @@
+discord.py
+letterboxdpy
+requests
+beautifulsoup4
