@@ -9,9 +9,11 @@ from letterboxdpy.movie import Movie
 from letterboxdpy.user import User
 import statistics
 import time
+import os   # ← ADD THIS LINE AT THE VERY TOP (after the other imports)
 
 # ================== CONFIG ==================
-TOKEN = "YOUR_DISCORD_BOT_TOKEN_HERE"   # ← CHANGE THIS
+TOKEN = os.getenv("TOKEN")   # ← Railway will supply this automatically
+# Do NOT put your real token here anymore
 PREFIX = "."
 DB_FILE = "lbx_server.db"
 # ===========================================
